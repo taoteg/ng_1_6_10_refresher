@@ -21,6 +21,8 @@
 <body ng-app="firstNgApp">
   <div ng-controller="mainCtrl as vm">
 
+    <h1>AngularJS 1.6 Refresher</h1>
+
     <div class="lesson">
       <p class="title">Part 1</p>
       <p><b>Getting Started</b></p>
@@ -53,9 +55,27 @@
       <p>
         <i>List of Cars</i>
         <p>Search by value:</p>
-        <input type="text" ng-model="vm.search" />
-        <ul ng-repeat="car in vm.cars | filter: vm.search">
+        <input type="text" ng-model="vm.searchCar" />
+        <ul ng-repeat="car in vm.cars | filter: vm.searchCar">
           <li>{{ car | makePlural }}</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="lesson">
+      <p class="title">Part 5</p>
+      <p><b>$http Service</b></p>
+      <p>
+        <i>List of Posts</i>
+        <p>Search by value:</p>
+        <input type="text" ng-model="vm.searchPosts" />
+        <ul ng-repeat="post in vm.posts | filter: vm.searchPosts">
+          <!-- <li>{{ post }}</li> -->
+          <li>
+            title: {{ post.title }}
+            <br/>
+            body: {{ post.body }}
+          </li>
         </ul>
       </p>
     </div>

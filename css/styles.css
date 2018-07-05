@@ -9,26 +9,46 @@ body {
   text-rendering: optimizeLegibility;
   line-height: 1.5;
 
-  /* LIGHT */
-  background: #EEE;
+  /* DEFAULT */
+  background: #DDF;
   color: #111;
+
+  /* LIGHT */
+  /* background: #EEE; */
+  /* color: #111; */
 
   /* DARK */
   /* background: #111; */
-  /* color: #FFF; */
+  /* color: #EEE; */
 }
 
 input {
   margin: 0 0 1rem;
 }
 
+.lesson {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #000;
+  background: #EEE;
+  color: #222;
+}
+
+.title {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #639;
+}
+
 /* LIGHT */
+/*
 h1 { color: #60A; }
 h2 { color: #00A; }
 h3 { color: #0A0; }
 h4 { color: #AA0; }
 h5 { color: #A60; }
 h6 { color: #A00; }
+*/
 
 /* DARK */
 /*
@@ -55,15 +75,3 @@ h6 { color: #F00; }
 .text-10 {font-size: 0.8rem;    /* 10pt 	13px 	0.8em 	80% 	small  */}
 .text-09 {font-size: 0.75rem;   /* 9pt 	  12px 	0.75em 	75%   -----  */}
 .text-08 {font-size: 0.7rem;    /* 8pt 	11px 	0.7em 	70%  -----  */}
-
-.lesson {
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #000;
-}
-
-.title {
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.5rem;
-  color: #639;
-}

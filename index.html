@@ -24,84 +24,122 @@
     <h1>AngularJS 1.6 Refresher</h1>
 
     <div class="lesson">
-      <p class="title">Part 1</p>
-      <p><b>Getting Started</b></p>
-      <p>The Sky is {{2>1}} blue</p>
+      <button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#collapsePart01" aria-expanded="false" aria-controls="collapsePart01">
+        Part 1: Getting Started
+      </button>
+      <div class="collapse" id="collapsePart01">
+        <p class="heading">Getting Started</p>
+        <p>The Sky is {{2>1}} blue</p>
+      </div>
     </div>
 
     <div class="lesson">
-      <p class="title">Part 2</p>
-      <p><b>Two-way Data Binding & Controllers</b></p>
-      <p>{{ vm.world }}</p>
-      <p>{{ vm.inputtext }}</p>
-      <input type="text" ng-model="vm.inputtext" />
+      <button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#collapsePart02" aria-expanded="false" aria-controls="collapsePart02">
+        Part 2: Two-way Data Binding & Controllers
+      </button>
+      <div class="collapse" id="collapsePart02">
+        <p class="heading">Two-way Data Binding & Controllers</p>
+        <p>{{ vm.world }}</p>
+        <p>{{ vm.inputtext }}</p>
+        <input type="text" ng-model="vm.inputtext" />
+      </div>
     </div>
 
     <div class="lesson">
-      <p class="title">Part 3</p>
-      <p><b>Common Directives</b></p>
-      <p>
-        <i>List of Fruits</i>
-        <ul ng-repeat="fruit in vm.fruits">
-          <li>{{ fruit }}</li>
-        </ul>
-        <button class="btn btn-primary" ng-click="vm.alertMe()">Alert</button>
-      </p>
+      <button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#collapsePart03" aria-expanded="false" aria-controls="collapsePart03">
+        Part 3: Common Directives
+      </button>
+      <div class="collapse" id="collapsePart03">
+        <p class="heading">Common Directives</p>
+        <p>
+          <i>List of Fruits</i>
+          <ul ng-repeat="fruit in vm.fruits">
+            <li>{{ fruit }}</li>
+          </ul>
+          <button class="btn btn-danger" ng-click="vm.alertMe()">Alert</button>
+        </p>
+      </div>
     </div>
 
     <div class="lesson">
-      <p class="title">Part 4</p>
-      <p><b>Filters</b></p>
-      <p>
-        <i>List of Cars</i>
-        <p>Search by value:</p>
-        <input type="text" ng-model="vm.searchCar" />
-        <ul ng-repeat="car in vm.cars | filter: vm.searchCar">
-          <li>{{ car | makePlural }}</li>
-        </ul>
-      </p>
+      <button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#collapsePart04" aria-expanded="false" aria-controls="collapsePart04">
+        Part 4: Filters
+      </button>
+      <div class="collapse" id="collapsePart04">
+        <p class="heading">Filters</p>
+        <p>
+          <i>List of Cars</i>
+          <p>Search by value:</p>
+          <input type="text" ng-model="vm.searchCar" />
+          <ul ng-repeat="car in vm.cars | filter: vm.searchCar">
+            <li>{{ car | makePlural }}</li>
+          </ul>
+        </p>
+      </div>
     </div>
 
     <div class="lesson">
-      <p class="title">Part 5</p>
-      <p><b>$http Service</b></p>
-      <p>
-        <i>List of Posts</i>
-        <p>Search by value:</p>
-        <input type="text" ng-model="vm.searchPosts" />
-        <ul ng-repeat="post in vm.posts | filter: vm.searchPosts">
-          <!-- <li>post: {{ post }}</li> -->
-          <li>title: {{ post.title }}</li>
-        </ul>
-      </p>
+      <button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#collapsePart05" aria-expanded="false" aria-controls="collapsePart05">
+        Part 5: $http Service
+      </button>
+      <div class="collapse" id="collapsePart05">
+        <p class="heading">$http Service</p>
+        <p>
+          <i>List of Posts</i>
+          <p>Search by value:</p>
+          <input type="text" ng-model="vm.searchPosts" />
+          <ul ng-repeat="post in vm.posts | filter: vm.searchPosts">
+            <!-- <li>post: {{ post }}</li> -->
+            <li>title: {{ post.title }}</li>
+          </ul>
+        </p>
+      </div>
     </div>
 
     <div class="lesson">
-      <p class="title">Part 6A</p>
-      <p><b>Services</b></p>
-      <p>
-        <i>List of Albums</i>
-        <p>Search by value:</p>
-        <input type="text" ng-model="vm.searchAlbums" />
-        <ul ng-repeat="album in vm.albums | filter: vm.searchAlbums">
-          <!-- <li>album: {{ album }}</li> -->
-          <li>title: {{ album.title }}</li>
-        </ul>
-      </p>
+      <button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#collapsePart06A" aria-expanded="false" aria-controls="collapsePart06A">
+        Part 6A: Services
+      </button>
+      <div class="collapse" id="collapsePart06A">
+        <p class="heading">Services</p>
+        <p>
+          <i>List of Albums</i>
+          <p>Search by value:</p>
+          <input type="text" ng-model="vm.searchAlbums" />
+          <ul ng-repeat="album in vm.albums | filter: vm.searchAlbums">
+            <!-- <li>album: {{ album }}</li> -->
+            <li>title: {{ album.title }}</li>
+          </ul>
+        </p>
+      </div>
     </div>
 
     <div class="lesson">
-      <p class="title">Part 6B</p>
-      <p><b>Factories</b></p>
-      <p>
-        <i>List of Comments</i>
-        <p>Search by value:</p>
-        <input type="text" ng-model="vm.searchComments" />
-        <ul ng-repeat="comment in vm.comments | filter: vm.searchComments">
-          <!-- <li>comment: {{ comment }}</li> -->
-          <li>body: {{ comment.body }}</li>
-        </ul>
-      </p>
+      <button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#collapsePart06B" aria-expanded="false" aria-controls="collapsePart06B">
+        Part 6B: Factories
+      </button>
+      <div class="collapse" id="collapsePart06B">
+        <p class="heading">Factories</p>
+        <p>
+          <i>List of Comments</i>
+          <p>Search by value:</p>
+          <input type="text" ng-model="vm.searchComments" />
+          <ul ng-repeat="comment in vm.comments | filter: vm.searchComments">
+            <!-- <li>comment: {{ comment }}</li> -->
+            <li>body: {{ comment.body }}</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <div class="lesson">
+      <button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#collapsePart07" aria-expanded="false" aria-controls="collapsePart07">
+        Part 7: Simple Components
+      </button>
+      <div class="collapse" id="collapsePart07">
+        <p class="heading">Simple Components</p>
+        <p></p>
+      </div>
     </div>
 
   </div>

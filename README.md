@@ -1,5 +1,7 @@
 # AngularJS v1.6 Refresher
 
+From: https://www.youtube.com/playlist?list=PL7sCSgsRZ-sl6jCxRYMwFBY-_wdVDbioz
+
 ## Course Goals
 
 - Getting Started

@@ -5,7 +5,7 @@ body {
   padding: 0.5rem 1rem 2rem;
 
   font-family: 'Merriweather', serif;
-  font-size: 1rem;
+  font-size: 0.85rem;
   text-rendering: optimizeLegibility;
   line-height: 1.5;
 
@@ -16,6 +16,10 @@ body {
   /* DARK */
   /* background: #111; */
   /* color: #FFF; */
+}
+
+input {
+  margin: 0 0 1rem;
 }
 
 /* LIGHT */
@@ -45,9 +49,21 @@ h6 { color: #F00; }
 .font-merriweather-sans {font-family: 'Merriweather Sans', sans-serif;}
 
 .text-14 {font-size: 1.2rem;     /* 14pt 	19px 	1.2em 	120%  -----  */}
-.text-13  {font-size: 1.05rem;   /* 13pt 	17px 	1.05em 	105%  -----  */}
-.text-12  {font-size: 1rem;      /* 12pt 	16px 	1em 	  100% 	medium */}
-.text-11  {font-size: 0.95rem;   /* 11pt 	15px 	0.95em 	95%   -----  */}
-.text-10  {font-size: 0.8rem;    /* 10pt 	13px 	0.8em 	80% 	small  */}
-.text-09  {font-size: 0.75rem;   /* 9pt 	  12px 	0.75em 	75%   -----  */}
-.text-08  {font-size: 0.7rem;    /* 8pt 	11px 	0.7em 	70%  -----  */}
+.text-13 {font-size: 1.05rem;   /* 13pt 	17px 	1.05em 	105%  -----  */}
+.text-12 {font-size: 1rem;      /* 12pt 	16px 	1em 	  100% 	medium */}
+.text-11 {font-size: 0.95rem;   /* 11pt 	15px 	0.95em 	95%   -----  */}
+.text-10 {font-size: 0.8rem;    /* 10pt 	13px 	0.8em 	80% 	small  */}
+.text-09 {font-size: 0.75rem;   /* 9pt 	  12px 	0.75em 	75%   -----  */}
+.text-08 {font-size: 0.7rem;    /* 8pt 	11px 	0.7em 	70%  -----  */}
+
+.lesson {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #000;
+}
+
+.title {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #639;
+}

@@ -20,23 +20,47 @@
 
 <body ng-app="firstNgApp">
   <div ng-controller="mainCtrl as vm">
-    <h1>The Sky is {{2>1}} blue</h1>
 
-    <h2>Getting Started</h2>
-    <p>{{ vm.world }}</p>
-    <p>{{ vm.inputtext }}</p>
-    <input type="text" ng-model="vm.inputtext" />
-    <br/><br/>
+    <div class="lesson">
+      <p class="title">Part 1</p>
+      <p><b>Getting Started</b></p>
+      <p>The Sky is {{2>1}} blue</p>
+    </div>
 
-    <h3>Common Directives</h3>
-    <p>
-      <b>List of Fruits</b>
-      <ul ng-repeat="fruit in vm.fruits">
-        <li>{{ fruit }}</li>
-      </ul>
-      <button class="btn btn-primary" ng-click="vm.alertMe()">Alert</button>
-    </p>
-    <br/><br/>
+    <div class="lesson">
+      <p class="title">Part 2</p>
+      <p><b>Two-way Data Binding & Controllers</b></p>
+      <p>{{ vm.world }}</p>
+      <p>{{ vm.inputtext }}</p>
+      <input type="text" ng-model="vm.inputtext" />
+    </div>
+
+    <div class="lesson">
+      <p class="title">Part 3</p>
+      <p><b>Common Directives</b></p>
+      <p>
+        <i>List of Fruits</i>
+        <ul ng-repeat="fruit in vm.fruits">
+          <li>{{ fruit }}</li>
+        </ul>
+        <button class="btn btn-primary" ng-click="vm.alertMe()">Alert</button>
+      </p>
+    </div>
+
+    <div class="lesson">
+      <p class="title">Part 4</p>
+      <p><b>Filters</b></p>
+      <p>
+        <i>List of Cars</i>
+        <p>Search by value:</p>
+        <input type="text" ng-model="vm.search" />
+        <ul ng-repeat="car in vm.cars | filter: vm.search">
+          <li>{{ car | makePlural }}</li>
+        </ul>
+      </p>
+    </div>
+
+
   </div>
 
   <!-- Dependencies -->

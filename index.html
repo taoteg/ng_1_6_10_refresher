@@ -19,8 +19,11 @@
 </head>
 
 <body ng-app="firstNgApp">
-  <div ng-controller="mainCtrl">
+  <div ng-controller="mainCtrl as vm">
     <p>The Sky is {{2>1}} blue</p>
+    <p>{{ vm.world }}</p>
+    <p>{{ vm.inputtext }}</p>
+    <input type="text" ng-model="vm.inputtext" />
   </div>
 
   <!-- Dependencies -->

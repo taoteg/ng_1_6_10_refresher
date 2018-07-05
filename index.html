@@ -101,16 +101,7 @@
         Part 6A: Services
       </button>
       <div class="collapse" id="collapsePart06A">
-        <p class="heading">Services</p>
-        <p>
-          <i>List of Albums</i>
-          <p>Search by value:</p>
-          <input type="text" ng-model="vm.searchAlbums" />
-          <ul ng-repeat="album in vm.albums | filter: vm.searchAlbums">
-            <!-- <li>album: {{ album }}</li> -->
-            <li>title: {{ album.title }}</li>
-          </ul>
-        </p>
+        <albums-list></albums-list>
       </div>
     </div>
 
@@ -119,16 +110,7 @@
         Part 6B: Factories
       </button>
       <div class="collapse" id="collapsePart06B">
-        <p class="heading">Factories</p>
-        <p>
-          <i>List of Comments</i>
-          <p>Search by value:</p>
-          <input type="text" ng-model="vm.searchComments" />
-          <ul ng-repeat="comment in vm.comments | filter: vm.searchComments">
-            <!-- <li>comment: {{ comment }}</li> -->
-            <li>body: {{ comment.body }}</li>
-          </ul>
-        </p>
+        <comments-list></comments-list>
       </div>
     </div>
 
@@ -138,7 +120,7 @@
       </button>
       <div class="collapse" id="collapsePart07">
         <p class="heading">Simple Components</p>
-        <p></p>
+        <p>Both the Albums Service and the Comments Factory have both been refactored into simple components under the hood. Dig into teh code to see the changes.</p>
       </div>
     </div>
 
@@ -149,5 +131,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.10/angular.js"></script>
   <script src="js/app.js"></script>
+  <script src="components/albums-list.component.js"></script>
+  <script src="components/comments-list.component.js"></script>
 </body>
 </html>

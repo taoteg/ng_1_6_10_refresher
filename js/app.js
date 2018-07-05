@@ -1,7 +1,7 @@
 // Base Javascript file for app.
 var app = angular.module('firstNgApp', []);
 
-app.controller('mainCtrl', function( $http, albumSvc, commentSvc ) {
+app.controller('mainCtrl', function( $http ) {
 
   // Part 2. Two-way Data Binding & Controllers.
   this.world = 'hello';
@@ -24,18 +24,6 @@ app.controller('mainCtrl', function( $http, albumSvc, commentSvc ) {
   $http.get(targetUrl).then(function(response) {
     // console.log(response);
     vm.posts = response.data;
-  });
-
-  // Part 6A. Services.
-  albumSvc.getAlbums().then(function(response) {
-    // console.log(response);
-    vm.albums = response.data;
-  });
-
-  // Part 6B. Factories.
-  commentSvc.getComments().then(function(response) {
-    // console.log(response);
-    vm.comments = response.data;
   });
 });
 

@@ -1,6 +1,24 @@
 // Base Javascript file for app.
-var app = angular.module('firstNgApp', []);
 
+// Define App.
+var app = angular.module('firstNgApp', ['ui.router']);
+
+// Configure App.
+app.config(function( $stateProvider, $urlRouterProvider ) {
+  $urlRouterProvider.otherwise('/');
+
+  $stateProvider
+    .state('home', {
+      url: '/',
+      templateUrl: '../home.html'
+    })
+    .state('posts', {
+      url: '/posts',
+      templateUrl: '<posts-list></posts-list>'
+    });
+});
+
+// Define Main App Controller.
 app.controller('mainCtrl', function( $http ) {
 
   // Part 2. Two-way Data Binding & Controllers.
@@ -21,12 +39,13 @@ app.controller('mainCtrl', function( $http ) {
   // declaring vm as `this` is required to get the correct reference to `this` in the $http.get method.
   var vm = this;
   var targetUrl = 'https://jsonplaceholder.typicode.com/posts';
-  $http.get(targetUrl).then(function(response) {
+  $http.get(targetUrl).then(function( response ) {
     // console.log(response);
     vm.posts = response.data;
   });
 });
 
+// Define Filters.
 // Part 4 (continued)
 app.filter('makePlural', function() {
   return function(input) {
@@ -34,8 +53,9 @@ app.filter('makePlural', function() {
   }
 });
 
+// Define Services.
 // Part 6A: Services.
-app.service('albumSvc', function($http) {
+app.service('albumSvc', function( $http ) {
   // Relocating get call into a service.
   var targetUrl = 'https://jsonplaceholder.typicode.com/albums';
 
@@ -44,8 +64,9 @@ app.service('albumSvc', function($http) {
   }
 });
 
+// Define Factories.
 // Part 6B: Factory.
-app.factory('commentSvc', function($http) {
+app.factory('commentSvc', function( $http ) {
   // Relocating get call into a service.
   var targetUrl = 'https://jsonplaceholder.typicode.com/comments';
 
@@ -57,3 +78,6 @@ app.factory('commentSvc', function($http) {
     getComments: getComments
   }
 });
+
+// Refactor into Components when possible.
+// Part 7: Refactor into Simple Components.

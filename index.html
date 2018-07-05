@@ -70,16 +70,39 @@
         <p>Search by value:</p>
         <input type="text" ng-model="vm.searchPosts" />
         <ul ng-repeat="post in vm.posts | filter: vm.searchPosts">
-          <!-- <li>{{ post }}</li> -->
-          <li>
-            title: {{ post.title }}
-            <br/>
-            body: {{ post.body }}
-          </li>
+          <!-- <li>post: {{ post }}</li> -->
+          <li>title: {{ post.title }}</li>
         </ul>
       </p>
     </div>
 
+    <div class="lesson">
+      <p class="title">Part 6A</p>
+      <p><b>Services</b></p>
+      <p>
+        <i>List of Albums</i>
+        <p>Search by value:</p>
+        <input type="text" ng-model="vm.searchAlbums" />
+        <ul ng-repeat="album in vm.albums | filter: vm.searchAlbums">
+          <!-- <li>album: {{ album }}</li> -->
+          <li>title: {{ album.title }}</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="lesson">
+      <p class="title">Part 6B</p>
+      <p><b>Factories</b></p>
+      <p>
+        <i>List of Comments</i>
+        <p>Search by value:</p>
+        <input type="text" ng-model="vm.searchComments" />
+        <ul ng-repeat="comment in vm.comments | filter: vm.searchComments">
+          <!-- <li>comment: {{ comment }}</li> -->
+          <li>body: {{ comment.body }}</li>
+        </ul>
+      </p>
+    </div>
 
   </div>
 

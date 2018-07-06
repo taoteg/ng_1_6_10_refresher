@@ -22,29 +22,6 @@ body {
   /* color: #EEE; */
 }
 
-
-input {
-  margin: 0 0 0.5rem;
-}
-
-.heading {
-  margin: 1rem 0;
-  font-weight: 900;
-}
-.lesson {
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #000;
-  background: #EEE;
-  color: #222;
-}
-
-.title {
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.5rem;
-  color: #639;
-}
-
 /* LIGHT */
 /*
 h1 { color: #60A; }
@@ -64,6 +41,46 @@ h4 { color: #FF0; }
 h5 { color: #F80; }
 h6 { color: #F00; }
 */
+
+input {
+  margin: 0 0 0.5rem;
+}
+
+.transition {
+  /* transition-property: all; */
+  /* transition-duration: 300ms; */
+  /* transition-timing-function: ease; */
+  transition: all 300ms ease-in-out;
+}
+.transition:hover {
+  letter-spacing: 0.8px;
+}
+
+.dropdown-item:hover {
+  color: #60C;
+}
+.dropdown-menu-title {
+  margin: 0.5rem 1rem;
+  color: #777;
+}
+
+.heading {
+  margin: 1rem 0;
+  font-weight: 900;
+}
+.lesson {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #000;
+  background: #EEE;
+  color: #222;
+}
+
+.title {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #639;
+}
 
 /* font-family: 'Vollkorn', serif; */
 /* font-family: 'Merriweather', serif; */

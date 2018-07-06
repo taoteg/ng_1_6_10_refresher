@@ -9,6 +9,7 @@ function AlbumsListController(albumSvc) {
 }
 
 app.component('albumsList', {
+  styleUrls: './components/albums-list.component.css',
   templateUrl: './components/albums-list.html',
   controller: AlbumsListController,
   controllerAs: 'vm'

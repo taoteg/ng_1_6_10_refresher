@@ -9,6 +9,7 @@ function CommentsListController(commentSvc) {
 }
 
 app.component('commentsList', {
+  styleUrls: './components/comments-list.component.css',
   templateUrl: './components/comments-list.html',
   controller: CommentsListController,
   controllerAs: 'vm'

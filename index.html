@@ -20,162 +20,10 @@
   <![endif]-->
 </head>
 
-<body ng-app="firstNgApp">
-  <div ng-controller="mainCtrl as vm">
-    <!-- NEW CONTENT -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <a class="navbar-brand" href="#">AngularJS 1.6 Refresher</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Data
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="dropdown-menu-title">Data</div>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item transition" href="#">Posts</a>
-              <a class="dropdown-item transition" href="#">Albums</a>
-              <a class="dropdown-item transition" href="#">Comments</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Parts
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="dropdown-menu-title">Parts</div>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item transition" href="#">01. Getting Started</a>
-              <a class="dropdown-item transition" href="#">02. Two-way Data Binding & Controllers</a>
-              <a class="dropdown-item transition" href="#">03. Common Directives</a>
-              <a class="dropdown-item transition" href="#">04. Filters</a>
-              <a class="dropdown-item transition" href="#">05. $http Services</a>
-              <a class="dropdown-item transition" href="#">06. Services</a>
-              <a class="dropdown-item transition" href="#">07. Factories</a>
-              <a class="dropdown-item transition" href="#">08. Simple Components</a>
-              <a class="dropdown-item transition" href="#">09. UI-Router</a>
-              <a class="dropdown-item transition" href="#">10. TBD</a>
-            </div>
-          </li>
-        </ul>
-        <!--
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        -->
-      </div>
-    </nav>
-
-    <!-- OLD CONTENT -->
-    <div class="lesson">
-      <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart01" aria-expanded="false" aria-controls="collapsePart01">
-        Part 1: Getting Started
-      </button>
-      <div class="collapse" id="collapsePart01">
-        <!-- <p class="heading">Getting Started</p>
-        <p>The Sky is {{2>1}} blue</p> -->
-      </div>
-    </div>
-
-    <div class="lesson">
-      <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart02" aria-expanded="false" aria-controls="collapsePart02">
-        Part 2: Two-way Data Binding & Controllers
-      </button>
-      <div class="collapse" id="collapsePart02">
-        <!-- <p class="heading">Two-way Data Binding & Controllers</p>
-        <p>{{ vm.world }}</p>
-        <p>{{ vm.inputtext }}</p>
-        <input type="text" ng-model="vm.inputtext" /> -->
-      </div>
-    </div>
-
-    <div class="lesson">
-      <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart03" aria-expanded="false" aria-controls="collapsePart03">
-        Part 3: Common Directives
-      </button>
-      <div class="collapse" id="collapsePart03">
-        <!-- <p class="heading">Common Directives</p>
-        <p>
-          <i>List of Fruits</i>
-          <ul ng-repeat="fruit in vm.fruits">
-            <li>{{ fruit }}</li>
-          </ul>
-          <button class="btn btn-secondary" ng-click="vm.alertMe()">Alert</button>
-        </p> -->
-      </div>
-    </div>
-
-    <div class="lesson">
-      <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart04" aria-expanded="false" aria-controls="collapsePart04">
-        Part 4: Filters
-      </button>
-      <div class="collapse" id="collapsePart04">
-        <!-- <p class="heading">Filters</p>
-        <p>
-          <i>List of Cars</i>
-          <p>Search by value:</p>
-          <input type="text" ng-model="vm.searchCar" />
-          <ul ng-repeat="car in vm.cars | filter: vm.searchCar">
-            <li>{{ car | makePlural }}</li>
-          </ul>
-        </p> -->
-      </div>
-    </div>
-
-    <div class="lesson">
-      <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart05" aria-expanded="false" aria-controls="collapsePart05">
-        Part 5: $http Service
-      </button>
-      <div class="collapse" id="collapsePart05">
-        <posts-list></posts-list>
-      </div>
-    </div>
-
-    <div class="lesson">
-      <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart06A" aria-expanded="false" aria-controls="collapsePart06A">
-        Part 6A: Services
-      </button>
-      <div class="collapse" id="collapsePart06A">
-        <albums-list></albums-list>
-      </div>
-    </div>
-
-    <div class="lesson">
-      <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart06B" aria-expanded="false" aria-controls="collapsePart06B">
-        Part 6B: Factories
-      </button>
-      <div class="collapse" id="collapsePart06B">
-        <comments-list></comments-list>
-      </div>
-    </div>
-
-    <div class="lesson">
-      <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart07" aria-expanded="false" aria-controls="collapsePart07">
-        Part 7: Simple Components
-      </button>
-      <div class="collapse" id="collapsePart07">
-        <!-- <p class="heading">Simple Components</p>
-        <p>Both the Albums Service and the Comments Factory have both been refactored into simple components under the hood. Dig into teh code to see the changes.</p> -->
-      </div>
-    </div>
-
-    <div class="lesson">
-      <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart08" aria-expanded="false" aria-controls="collapsePart08">
-        Part 8: Ui-Router
-      </button>
-      <div class="collapse" id="collapsePart08">
-        <!-- <p class="heading">Using Ui-Router</p>
-        <p>Major refactor to site structure in progress...</p> -->
-      </div>
-    </div>
+<body ng-app="reviewNgApp">
+  <navigation></navigation>
+  <div class="content">
+    <ui-view></ui-view>
   </div>
 
   <!-- Vendor Dependencies -->
@@ -186,8 +34,20 @@
 
   <!-- Custom Dependencies -->
   <script src="app.js"></script>
+  <script src="components/navigation.component.js"></script>
   <script src="components/posts-list.component.js"></script>
   <script src="components/albums-list.component.js"></script>
   <script src="components/comments-list.component.js"></script>
+  <script src="components/part-01.component.js"></script>
+  <script src="components/part-02.component.js"></script>
+  <script src="components/part-03.component.js"></script>
+  <script src="components/part-04.component.js"></script>
+  <script src="components/part-05.component.js"></script>
+  <script src="components/part-06a.component.js"></script>
+  <script src="components/part-06b.component.js"></script>
+  <script src="components/part-07.component.js"></script>
+  <script src="components/part-08.component.js"></script>
+  <!-- <script src="components/part-09.component.js"></script> -->
+  <script src="components/index.component.js"></script>
 </body>
 </html>

@@ -36,7 +36,8 @@ html {
 }
 body {
   margin: 0;
-  padding: 0.5rem 1rem 2rem;
+  /* padding: 0.5rem 1rem 2rem; */
+  padding: 0;
   font-family: 'Merriweather', serif;
   font-size: 0.85rem;
   text-rendering: optimizeLegibility;
@@ -48,18 +49,14 @@ input {
   margin: 0 0 0.5rem;
 }
 /* SELECTOR-CLASSES */
+.content {
+  margin: 1rem 1rem 2rem;
+}
 .transition {
   transition: all 200ms ease;
 }
 .transition:hover {
   padding-left: 2rem;
-}
-.dropdown-item:hover {
-  color: #60C;
-}
-.dropdown-menu-title {
-  margin: 0.5rem 1rem;
-  color: #777;
 }
 .heading {
   margin: 1rem 0;
@@ -77,3 +74,6 @@ input {
   font-size: 1.5rem;
   color: #639;
 }
+/**
+ * Keep styles in component definition files.
+ */

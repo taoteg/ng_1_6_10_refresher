@@ -1,9 +1,0 @@
-<p class="heading">Filters</p>
-<p>
-  <i>List of Cars</i>
-  <p>Search by value:</p>
-  <input type="text" ng-model="vm.searchCar" />
-  <ul ng-repeat="car in vm.cars | filter: vm.searchCar">
-    <li>{{ car | makePlural }}</li>
-  </ul>
-</p>

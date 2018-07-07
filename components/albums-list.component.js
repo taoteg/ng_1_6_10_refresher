@@ -1,9 +1,7 @@
 function AlbumsListController(albumSvc) {
+  // Part 6A. Albums Service (Part 7 - Refactored into Component)
   var vm = this;
-
-  // Part 7. Albums Service (6A) Refactored into Component.
   albumSvc.getAlbums().then(function(response) {
-    // console.log(response);
     vm.albums = response.data;
   });
 }
@@ -11,24 +9,23 @@ function AlbumsListController(albumSvc) {
 app.component('albumsList', {
   controller: AlbumsListController,
   controllerAs: 'vm',
-  // styles: ['.albums-list { color: #C00 !important; }'],
-  // styleUrls: './components/albums-list.component.css',
-  // templateUrl: './components/albums-list.component.html',
   template: `
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
     <style>
-      .albums-list { color: #C00 !important; }
+      .albums-list {
+        padding: 1rem;
+        background: #EEE;
+        border: 1px solid #000;
+      }
     </style>
     <!-- TEMPLATE -->
-    <p class="heading albums-list">Services</p>
-    <p>
-      <i>List of Albums</i>
+    <div class="albums-list">
+      <p class="heading">Services: <i>List of Albums</i></p>
       <p>Search by value:</p>
       <input type="text" ng-model="vm.searchAlbums" />
       <ul ng-repeat="album in vm.albums | filter: vm.searchAlbums">
-        <!-- <li>album: {{ album }}</li> -->
         <li>title: {{ album.title }}</li>
       </ul>
-    </p>`
+    </div>`
 });

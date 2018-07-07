@@ -1,80 +1,72 @@
 // Base Javascript file for app.
 
 // Define App.
-var app = angular.module('firstNgApp', ['ui.router']);
+var app = angular.module('reviewNgApp', ['ui.router']);
 
 // Configure App.
 app.config(function( $stateProvider, $urlRouterProvider ) {
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/');    // Catch all route.
 
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: '../home.html'
+      template: '<index></index>'
     })
     .state('posts', {
       url: '/posts',
-      templateUrl: '<posts-list></posts-list>'
+      template: '<posts-list></posts-list>'
     })
     .state('albums', {
       url: '/albums',
-      templateUrl: '<albums-list></albums-list>'
+      template: '<albums-list></albums-list>'
     })
     .state('comments', {
       url: '/comments',
-      templateUrl: '<comments-list></comments-list>'
+      template: '<comments-list></comments-list>'
     })
-    .state('step01', {
-      url: '/step01',
-      templateUrl: '<step01></step01>'
+    .state('part01', {
+      url: '/part01',
+      template: '<part01></part01>'
     })
-    .state('step02', {
-      url: '/step02',
-      templateUrl: '<step02></step02>'
+    .state('part02', {
+      url: '/part02',
+      template: '<part02></part02>'
     })
-    .state('step03', {
-      url: '/step03',
-      templateUrl: '<step03></step03>'
+    .state('part03', {
+      url: '/part03',
+      template: '<part03></part03>'
     })
-    .state('step04', {
-      url: '/step04',
-      templateUrl: '<step04></step04>'
+    .state('part04', {
+      url: '/part04',
+      template: '<part04></part04>'
     })
-    .state('step05', {
-      url: '/step05',
-      templateUrl: '<step05></step05>'
+    .state('part05', {
+      url: '/part05',
+      template: '<part05></part05>'
     })
-    .state('step06', {
-      url: '/step06',
-      templateUrl: '<step06></step06>'
+    .state('part06a', {
+      url: '/part06a',
+      template: '<part06a></part06a>'
     })
-    .state('step07', {
-      url: '/step07',
-      templateUrl: '<step07></step07>'
+    .state('part06b', {
+      url: '/part06b',
+      template: '<part06b></part06b>'
     })
-    .state('step08', {
-      url: '/step08',
-      templateUrl: '<step08></step08>'
+    .state('part07', {
+      url: '/part07',
+      template: '<part07></part07>'
+    })
+    .state('part08', {
+      url: '/part08',
+      template: '<part08></part08>'
     });
 });
 
 // Define Main App Controller.
-app.controller('mainCtrl', function( $http ) {
-
-  // Part 2. Two-way Data Binding & Controllers.
-  this.world = 'hello';
-  this.inputtext = 'some text to start...';
-
-  // Part 3. Directives.
-  this.fruits = ['apples', 'oranges','bananas'];
-
-  this.alertMe = function() {
-    alert('something');
-  }
-
-  // Part 4. Filters.
-  this.cars = ['oldmosbile', 'hyundai', 'kia', 'ford', 'honda', 'kawasaki'];
-
+app.controller('mainCtrl', function( ) {
+  // `this` reference required to get correct `this` in $http.get method.
+  var vm = this;
+  console.log( vm );
 });
 
 // Define Filters.

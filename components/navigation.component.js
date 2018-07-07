@@ -27,9 +27,11 @@ app.component('navigation', {
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+          <!--
           <li class="nav-item active">
             <a class="nav-link" ui-sref="home">Home <span class="sr-only">(current)</span></a>
           </li>
+          -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Data
@@ -49,6 +51,7 @@ app.component('navigation', {
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <div class="dropdown-menu-title">Parts</div>
               <div class="dropdown-divider"></div>
+              <a class="dropdown-item transition" ui-sref="example">00. Example Component</a>
               <a class="dropdown-item transition" ui-sref="part01">01. Getting Started</a>
               <a class="dropdown-item transition" ui-sref="part02">02. Two-way Data Binding & Controllers</a>
               <a class="dropdown-item transition" ui-sref="part03">03. Common Directives</a>
@@ -58,7 +61,7 @@ app.component('navigation', {
               <a class="dropdown-item transition" ui-sref="part06b">06B. Factories</a>
               <a class="dropdown-item transition" ui-sref="part07">07. Simple Components</a>
               <a class="dropdown-item transition" ui-sref="part08">08. UI-Router</a>
-              <!--<a class="dropdown-item transition" ui-sref="part09">09. TBD</a>-->
+              <a class="dropdown-item transition" ui-sref="part09">09. Nested Routes</a>
             </div>
           </li>
         </ul>

@@ -13,6 +13,7 @@ app.component('index', {
     <style>
     </style>
     <!-- TEMPLATE -->
+    <example-component></example-component>
     <part01></part01>
     <part02></part02>
     <part03></part03>
@@ -21,5 +22,6 @@ app.component('index', {
     <part06a></part06a>
     <part06b></part06b>
     <part07></part07>
-    <part08></part08>`
+    <part08></part08>
+    <part09></part09>`
 });

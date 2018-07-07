@@ -24,6 +24,10 @@ app.config(function( $stateProvider, $urlRouterProvider ) {
       url: '/comments',
       template: '<comments-list></comments-list>'
     })
+    .state('example', {
+      url: '/example',
+      template: '<example-component></example-component>'
+    })
     .state('part01', {
       url: '/part01',
       template: '<part01></part01>'

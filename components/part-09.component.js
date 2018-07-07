@@ -13,5 +13,12 @@ app.component('part09', {
     <style>
     </style>
     <!-- TEMPLATE -->
-    `
+    <div class="lesson">
+      <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart09" aria-expanded="false" aria-controls="collapsePart09">
+        Part 9: Nested Routes with Ui-Router
+      </button>
+      <div class="collapse" id="collapsePart09">
+        <p class="heading">Nested Routes with Ui-Router</p>
+      </div>
+    </div>`
 });

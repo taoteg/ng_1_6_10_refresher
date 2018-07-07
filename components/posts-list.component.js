@@ -10,9 +10,25 @@ function PostsListController( $http ) {
 }
 
 app.component('postsList', {
+  controller: PostsListController,
+  controllerAs: 'vm',
   // styles: ['.posts-list { color: #00C !important; }'],
   // styleUrls: './components/posts-list.component.css',
-  templateUrl: './components/posts-list.component.html',
-  controller: PostsListController,
-  controllerAs: 'vm'
+  // templateUrl: './components/posts-list.component.html',
+  template: `
+    <!-- SINGLE PAGE COMPONENT -->
+    <!-- COMPONENT STYLES -->
+    <style>
+      .posts-list { color: #00C !important; }
+    </style>
+    <!-- TEMPLATE -->
+    <p class="heading posts-list">$http Service</p>
+    <p>
+      <i>List of Posts</i>
+      <p>Search by value:</p>
+      <input type="text" ng-model="vm.searchPosts" />
+      <ul ng-repeat="post in vm.posts | filter: vm.searchPosts">
+        <li>title: {{ post.title }}</li>
+      </ul>
+    </p>`
 });

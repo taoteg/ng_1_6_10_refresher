@@ -12,17 +12,34 @@ app.config(function( $stateProvider, $urlRouterProvider ) {
       url: '/',
       template: '<index></index>'
     })
+    // .state('data', {
+    //   url: '/data',
+    //   template: '<ui-view></ui-view>'
+    // })
+    // .state('data.posts', {
+    //   url: '/posts',
+    //   template: '<posts-list></posts-list>',
+    //   controllerAs: 'vm'
+    // })
+    // .state('data.albums', {
+    //   url: '/albums',
+    //   template: '<albums-list></albums-list>',
+    //   controllerAs: 'vm'
+    // })
     .state('posts', {
       url: '/posts',
-      template: '<posts-list></posts-list>'
+      template: '<posts-list></posts-list>',
+      controllerAs: 'vm'
     })
     .state('albums', {
       url: '/albums',
-      template: '<albums-list></albums-list>'
+      template: '<albums-list></albums-list>',
+      controllerAs: 'vm'
     })
-    .state('comments', {
+    .state('forEach((item) => {})data.comments', {
       url: '/comments',
-      template: '<comments-list></comments-list>'
+      template: '<comments-list></comments-list>',
+      controllerAs: 'vm'
     })
     .state('example', {
       url: '/example',
@@ -68,13 +85,11 @@ app.config(function( $stateProvider, $urlRouterProvider ) {
 
 // Define Main App Controller.
 app.controller('mainCtrl', function( ) {
-  // `this` reference required to get correct `this` in $http.get method.
   var vm = this;
   console.log( vm );
 });
 
 // Define Filters.
-// Part 4 (continued)
 app.filter('makePlural', function() {
   return function(input) {
     return input + 's';
@@ -82,9 +97,7 @@ app.filter('makePlural', function() {
 });
 
 // Define Services.
-// Part 6A: Services.
 app.service('albumSvc', function( $http ) {
-  // Relocating get call into a service.
   var targetUrl = 'https://jsonplaceholder.typicode.com/albums';
 
   this.getAlbums = function() {
@@ -93,9 +106,7 @@ app.service('albumSvc', function( $http ) {
 });
 
 // Define Factories.
-// Part 6B: Factory.
 app.factory('commentSvc', function( $http ) {
-  // Relocating get call into a service.
   var targetUrl = 'https://jsonplaceholder.typicode.com/comments';
 
   var getComments = function() {
@@ -106,6 +117,3 @@ app.factory('commentSvc', function( $http ) {
     getComments: getComments
   }
 });
-
-// Refactor into Components when possible.
-// Part 7: Refactor into Simple Components.

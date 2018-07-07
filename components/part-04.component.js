@@ -20,15 +20,14 @@ app.component('part04', {
         Part 4: Filters
       </button>
       <div class="collapse" id="collapsePart04">
-        <p class="heading">Filters</p>
-        <p>
-          <i>List of Cars</i>
+        <div>
+          <p class="heading">Filters: <i>List of Cars</i></p>
           <p>Search by value:</p>
           <input type="text" ng-model="vm.searchCar" />
           <ul ng-repeat="car in vm.cars | filter: vm.searchCar">
             <li>{{ car | makePlural }}</li>
           </ul>
-        </p>
+        </div>
       </div>
     </div>`
 });

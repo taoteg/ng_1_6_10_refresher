@@ -15,10 +15,10 @@ app.component('part08', {
     <!-- TEMPLATE -->
     <div class="lesson">
       <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart08" aria-expanded="false" aria-controls="collapsePart08">
-        Part 8: Ui-Router
+        Part 8: UI-Router
       </button>
       <div class="collapse" id="collapsePart08">
-        <p class="heading">Using Ui-Router</p>
+        <p class="heading">Using UI-Router</p>
         <p>Major refactor to site structure is now completed.</p>
         <p>
           <ul>

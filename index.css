@@ -1,38 +1,12 @@
-html {font-size: 100%;}
-
-body {
-  margin: 0;
-  padding: 0.5rem 1rem 2rem;
-
-  font-family: 'Merriweather', serif;
-  font-size: 0.85rem;
-  text-rendering: optimizeLegibility;
-  line-height: 1.5;
-
-  /* DEFAULT */
-  background: #DDF;
-  color: #111;
-
-  /* LIGHT */
-  /* background: #EEE; */
-  /* color: #111; */
-
-  /* DARK */
-  /* background: #111; */
-  /* color: #EEE; */
-}
-
-/* LIGHT */
-/*
+/* COLORS */
+/* Light */
 h1 { color: #60A; }
 h2 { color: #00A; }
 h3 { color: #0A0; }
 h4 { color: #AA0; }
 h5 { color: #A60; }
 h6 { color: #A00; }
-*/
-
-/* DARK */
+/* Dark */
 /*
 h1 { color: #80F; }
 h2 { color: #00F; }
@@ -41,21 +15,45 @@ h4 { color: #FF0; }
 h5 { color: #F80; }
 h6 { color: #F00; }
 */
-
+/* FONT-FAMILIES */
+/* font-family: 'Vollkorn', serif; */
+/* font-family: 'Merriweather', serif; */
+/* font-family: 'Merriweather Sans', sans-serif; */
+.font-volkorn {font-family: 'Vollkorn', serif;}
+.font-merriweather {font-family: 'Merriweather', serif;}
+.font-merriweather-sans {font-family: 'Merriweather Sans', sans-serif;}
+/* FONT-SIZES */
+.text-14 {font-size: 1.2rem;     /* 14pt 	19px 	1.2em 	120%  -----  */}
+.text-13 {font-size: 1.05rem;   /* 13pt 	17px 	1.05em 	105%  -----  */}
+.text-12 {font-size: 1rem;      /* 12pt 	16px 	1em 	  100% 	medium */}
+.text-11 {font-size: 0.95rem;   /* 11pt 	15px 	0.95em 	95%   -----  */}
+.text-10 {font-size: 0.8rem;    /* 10pt 	13px 	0.8em 	80% 	small  */}
+.text-09 {font-size: 0.75rem;   /* 9pt 	  12px 	0.75em 	75%   -----  */}
+.text-08 {font-size: 0.7rem;    /* 8pt 	11px 	0.7em 	70%  -----  */}
+/* ELEMENT-TYPES */
+html {
+  font-size: 100%;
+}
+body {
+  margin: 0;
+  padding: 0.5rem 1rem 2rem;
+  font-family: 'Merriweather', serif;
+  font-size: 0.85rem;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  background: #DDF;
+  color: #111;
+}
 input {
   margin: 0 0 0.5rem;
 }
-
+/* SELECTOR-CLASSES */
 .transition {
-  /* transition-property: all; */
-  /* transition-duration: 300ms; */
-  /* transition-timing-function: ease; */
-  transition: all 300ms ease-in-out;
+  transition: all 200ms ease;
 }
 .transition:hover {
-  letter-spacing: 0.8px;
+  padding-left: 2rem;
 }
-
 .dropdown-item:hover {
   color: #60C;
 }
@@ -63,7 +61,6 @@ input {
   margin: 0.5rem 1rem;
   color: #777;
 }
-
 .heading {
   margin: 1rem 0;
   font-weight: 900;
@@ -75,25 +72,8 @@ input {
   background: #EEE;
   color: #222;
 }
-
 .title {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.5rem;
   color: #639;
 }
-
-/* font-family: 'Vollkorn', serif; */
-/* font-family: 'Merriweather', serif; */
-/* font-family: 'Merriweather Sans', sans-serif; */
-
-.font-volkorn {font-family: 'Vollkorn', serif;}
-.font-merriweather {font-family: 'Merriweather', serif;}
-.font-merriweather-sans {font-family: 'Merriweather Sans', sans-serif;}
-
-.text-14 {font-size: 1.2rem;     /* 14pt 	19px 	1.2em 	120%  -----  */}
-.text-13 {font-size: 1.05rem;   /* 13pt 	17px 	1.05em 	105%  -----  */}
-.text-12 {font-size: 1rem;      /* 12pt 	16px 	1em 	  100% 	medium */}
-.text-11 {font-size: 0.95rem;   /* 11pt 	15px 	0.95em 	95%   -----  */}
-.text-10 {font-size: 0.8rem;    /* 10pt 	13px 	0.8em 	80% 	small  */}
-.text-09 {font-size: 0.75rem;   /* 9pt 	  12px 	0.75em 	75%   -----  */}
-.text-08 {font-size: 0.7rem;    /* 8pt 	11px 	0.7em 	70%  -----  */}

@@ -9,8 +9,9 @@ function CommentsListController(commentSvc) {
 }
 
 app.component('commentsList', {
-  styleUrls: './components/comments-list.component.css',
-  templateUrl: './components/comments-list.html',
+  // styles: ['.comments-list { color: #0C0 !important; }'],
+  // styleUrls: './components/comments-list.component.css',
+  templateUrl: './components/comments-list.component.html',
   controller: CommentsListController,
   controllerAs: 'vm'
 });

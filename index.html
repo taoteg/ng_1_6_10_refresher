@@ -6,14 +6,17 @@
   <meta name="description" content="AngularJS 1.6">
   <meta name="author" content="taoteg">
 
-  <!-- Dependencies -->
+  <!-- Vendor Dependencies -->
   <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
   <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
-  <link href="components/albums-list.component.css" rel="stylesheet">
-  <link href="components/comments-list.component.css" rel="stylesheet">
+
+  <!-- Custom Dependencies -->
   <link href="index.css?v=1.0" rel="stylesheet" >
+  <!-- <link href="components/posts-list.component.css" rel="stylesheet"> -->
+  <!-- <link href="components/albums-list.component.css" rel="stylesheet"> -->
+  <!-- <link href="components/comments-list.component.css" rel="stylesheet"> -->
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -21,59 +24,58 @@
 </head>
 
 <body ng-app="firstNgApp">
-  <!-- NEW CONTENT -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a class="navbar-brand" href="#">AngularJS 1.6 Refresher</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Data
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <div class="dropdown-menu-title">Data</div>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item transition" href="#">Posts</a>
-            <a class="dropdown-item transition" href="#">Albums</a>
-            <a class="dropdown-item transition" href="#">Comments</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Parts
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <div class="dropdown-menu-title">Parts</div>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item transition" href="#">01. Getting Started</a>
-            <a class="dropdown-item transition" href="#">02. Two-way Data Binding & Controllers</a>
-            <a class="dropdown-item transition" href="#">03. Common Directives</a>
-            <a class="dropdown-item transition" href="#">04. Filters</a>
-            <a class="dropdown-item transition" href="#">05. $http Services</a>
-            <a class="dropdown-item transition" href="#">06. Services</a>
-            <a class="dropdown-item transition" href="#">07. Factories</a>
-            <a class="dropdown-item transition" href="#">08. Simple Components</a>
-            <a class="dropdown-item transition" href="#">09. UI-Router</a>
-            <a class="dropdown-item transition" href="#">10. TBD</a>
-          </div>
-        </li>
-      </ul>
-      <!--
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-      -->
-    </div>
-  </nav>
-
   <div ng-controller="mainCtrl as vm">
+    <!-- NEW CONTENT -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="#">AngularJS 1.6 Refresher</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Data
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu-title">Data</div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item transition" href="#">Posts</a>
+              <a class="dropdown-item transition" href="#">Albums</a>
+              <a class="dropdown-item transition" href="#">Comments</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Parts
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu-title">Parts</div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item transition" href="#">01. Getting Started</a>
+              <a class="dropdown-item transition" href="#">02. Two-way Data Binding & Controllers</a>
+              <a class="dropdown-item transition" href="#">03. Common Directives</a>
+              <a class="dropdown-item transition" href="#">04. Filters</a>
+              <a class="dropdown-item transition" href="#">05. $http Services</a>
+              <a class="dropdown-item transition" href="#">06. Services</a>
+              <a class="dropdown-item transition" href="#">07. Factories</a>
+              <a class="dropdown-item transition" href="#">08. Simple Components</a>
+              <a class="dropdown-item transition" href="#">09. UI-Router</a>
+              <a class="dropdown-item transition" href="#">10. TBD</a>
+            </div>
+          </li>
+        </ul>
+        <!--
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        -->
+      </div>
+    </nav>
 
     <!-- OLD CONTENT -->
     <div class="lesson">
@@ -81,8 +83,8 @@
         Part 1: Getting Started
       </button>
       <div class="collapse" id="collapsePart01">
-        <p class="heading">Getting Started</p>
-        <p>The Sky is {{2>1}} blue</p>
+        <!-- <p class="heading">Getting Started</p>
+        <p>The Sky is {{2>1}} blue</p> -->
       </div>
     </div>
 
@@ -91,10 +93,10 @@
         Part 2: Two-way Data Binding & Controllers
       </button>
       <div class="collapse" id="collapsePart02">
-        <p class="heading">Two-way Data Binding & Controllers</p>
+        <!-- <p class="heading">Two-way Data Binding & Controllers</p>
         <p>{{ vm.world }}</p>
         <p>{{ vm.inputtext }}</p>
-        <input type="text" ng-model="vm.inputtext" />
+        <input type="text" ng-model="vm.inputtext" /> -->
       </div>
     </div>
 
@@ -103,14 +105,14 @@
         Part 3: Common Directives
       </button>
       <div class="collapse" id="collapsePart03">
-        <p class="heading">Common Directives</p>
+        <!-- <p class="heading">Common Directives</p>
         <p>
           <i>List of Fruits</i>
           <ul ng-repeat="fruit in vm.fruits">
             <li>{{ fruit }}</li>
           </ul>
           <button class="btn btn-secondary" ng-click="vm.alertMe()">Alert</button>
-        </p>
+        </p> -->
       </div>
     </div>
 
@@ -119,7 +121,7 @@
         Part 4: Filters
       </button>
       <div class="collapse" id="collapsePart04">
-        <p class="heading">Filters</p>
+        <!-- <p class="heading">Filters</p>
         <p>
           <i>List of Cars</i>
           <p>Search by value:</p>
@@ -127,7 +129,7 @@
           <ul ng-repeat="car in vm.cars | filter: vm.searchCar">
             <li>{{ car | makePlural }}</li>
           </ul>
-        </p>
+        </p> -->
       </div>
     </div>
 
@@ -136,15 +138,7 @@
         Part 5: $http Service
       </button>
       <div class="collapse" id="collapsePart05">
-        <p class="heading">$http Service</p>
-        <p>
-          <i>List of Posts</i>
-          <p>Search by value:</p>
-          <input type="text" ng-model="vm.searchPosts" />
-          <ul ng-repeat="post in vm.posts | filter: vm.searchPosts">
-            <li>title: {{ post.title }}</li>
-          </ul>
-        </p>
+        <posts-list></posts-list>
       </div>
     </div>
 
@@ -171,8 +165,8 @@
         Part 7: Simple Components
       </button>
       <div class="collapse" id="collapsePart07">
-        <p class="heading">Simple Components</p>
-        <p>Both the Albums Service and the Comments Factory have both been refactored into simple components under the hood. Dig into teh code to see the changes.</p>
+        <!-- <p class="heading">Simple Components</p>
+        <p>Both the Albums Service and the Comments Factory have both been refactored into simple components under the hood. Dig into teh code to see the changes.</p> -->
       </div>
     </div>
 
@@ -181,42 +175,21 @@
         Part 8: Ui-Router
       </button>
       <div class="collapse" id="collapsePart08">
-        <p class="heading">Using Ui-Router</p>
-        <p>Major refactor to site structure in progress...</p>
+        <!-- <p class="heading">Using Ui-Router</p>
+        <p>Major refactor to site structure in progress...</p> -->
       </div>
     </div>
-    <!-- -->
-
-    <!-- NEW CONTENT -->
-    <!--
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapseMain">
-            <span class="sr-only"> Toggle Navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">AngularJS 1.6 Review</a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarCollapseMain">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Posts</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    -->
   </div>
 
-  <!-- Dependencies -->
+  <!-- Vendor Dependencies -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.10/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.18/angular-ui-router.min.js"></script>
+
+  <!-- Custom Dependencies -->
   <script src="app.js"></script>
+  <script src="components/posts-list.component.js"></script>
   <script src="components/albums-list.component.js"></script>
   <script src="components/comments-list.component.js"></script>
 </body>

@@ -15,6 +15,46 @@ app.config(function( $stateProvider, $urlRouterProvider ) {
     .state('posts', {
       url: '/posts',
       templateUrl: '<posts-list></posts-list>'
+    })
+    .state('albums', {
+      url: '/albums',
+      templateUrl: '<albums-list></albums-list>'
+    })
+    .state('comments', {
+      url: '/comments',
+      templateUrl: '<comments-list></comments-list>'
+    })
+    .state('step01', {
+      url: '/step01',
+      templateUrl: '<step01></step01>'
+    })
+    .state('step02', {
+      url: '/step02',
+      templateUrl: '<step02></step02>'
+    })
+    .state('step03', {
+      url: '/step03',
+      templateUrl: '<step03></step03>'
+    })
+    .state('step04', {
+      url: '/step04',
+      templateUrl: '<step04></step04>'
+    })
+    .state('step05', {
+      url: '/step05',
+      templateUrl: '<step05></step05>'
+    })
+    .state('step06', {
+      url: '/step06',
+      templateUrl: '<step06></step06>'
+    })
+    .state('step07', {
+      url: '/step07',
+      templateUrl: '<step07></step07>'
+    })
+    .state('step08', {
+      url: '/step08',
+      templateUrl: '<step08></step08>'
     });
 });
 
@@ -35,14 +75,6 @@ app.controller('mainCtrl', function( $http ) {
   // Part 4. Filters.
   this.cars = ['oldmosbile', 'hyundai', 'kia', 'ford', 'honda', 'kawasaki'];
 
-  // Part 5: $http Service.
-  // declaring vm as `this` is required to get the correct reference to `this` in the $http.get method.
-  var vm = this;
-  var targetUrl = 'https://jsonplaceholder.typicode.com/posts';
-  $http.get(targetUrl).then(function( response ) {
-    // console.log(response);
-    vm.posts = response.data;
-  });
 });
 
 // Define Filters.

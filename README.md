@@ -13,6 +13,5 @@ From: https://www.youtube.com/playlist?list=PL7sCSgsRZ-sl6jCxRYMwFBY-_wdVDbioz
 - Part 06B: Factories
 - Part 07: Basic Components
 - Part 08: Routing (using UI-Router)
-- Part 09: Nested Routes
-- Part 10: Passing Data
- 
+- Part 09: Nested Routes (WIP)
+- Part 10: Passing Data (TBD)

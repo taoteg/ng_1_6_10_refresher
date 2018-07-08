@@ -1,9 +1,4 @@
-function Part09Controller() {
-  // `this` reference required to get correct `this` in $http.get method.
-  var vm = this;
-  console.log( vm );
-}
-
+/* Component Definition */
 app.component('part09', {
   controller: Part09Controller,
   controllerAs: 'vm',
@@ -11,14 +6,41 @@ app.component('part09', {
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
     <style>
+      .component {}
+      .component-content {
+        padding: 0.5rem 1rem 0.2rem;
+        background: #EEE;
+        border: 1px solid #000;
+      }
+      .heading {
+        margin: 1rem 0;
+        font-weight: 900;
+      }
     </style>
     <!-- TEMPLATE -->
-    <div class="lesson">
-      <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart09" aria-expanded="false" aria-controls="collapsePart09">
+    <div class="component">
+      <button class="btn btn-block btn-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapsePart09"
+              aria-expanded="false"
+              aria-controls="collapsePart09">
         Part 9: Nested Routes with UI-Router
       </button>
-      <div class="collapse" id="collapsePart09">
+      <div class="collapse component-content" id="collapsePart09">
         <p class="heading">Nested Routes with UI-Router</p>
+        <p>Stuff will go here eventually...</p>
       </div>
     </div>`
 });
+
+/* We can rely on function hoisting here to make this entire method available to the component.
+ * Remember: function hoisting works well, variable hoisting works poorly.
+ */
+
+// Part 9 - Nested routes in ui-router.
+/* Part09Controller Controller */
+function Part09Controller() {
+  var vm = this;
+  // console.log( vm );
+}

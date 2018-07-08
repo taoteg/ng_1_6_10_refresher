@@ -1,9 +1,4 @@
-function Part08Controller() {
-  // `this` reference required to get correct `this` in $http.get method.
-  var vm = this;
-  console.log( vm );
-}
-
+/* Component Definition */
 app.component('part08', {
   controller: Part08Controller,
   controllerAs: 'vm',
@@ -11,13 +6,28 @@ app.component('part08', {
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
     <style>
+      .component {}
+      .component-content {
+        padding: 0.5rem 1rem 0.2rem;
+        background: #EEE;
+        border: 1px solid #000;
+      }
+      .heading {
+        margin: 1rem 0;
+        font-weight: 900;
+      }
     </style>
     <!-- TEMPLATE -->
-    <div class="lesson">
-      <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapsePart08" aria-expanded="false" aria-controls="collapsePart08">
+    <div class="component">
+      <button class="btn btn-block btn-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapsePart08"
+              aria-expanded="false"
+              aria-controls="collapsePart08">
         Part 8: UI-Router
       </button>
-      <div class="collapse" id="collapsePart08">
+      <div class="collapse component-content" id="collapsePart08">
         <p class="heading">Using UI-Router</p>
         <p>Major refactor to site structure is now completed.</p>
         <p>
@@ -34,3 +44,14 @@ app.component('part08', {
       </div>
     </div>`
 });
+
+/* We can rely on function hoisting here to make this entire method available to the component.
+ * Remember: function hoisting works well, variable hoisting works poorly.
+ */
+
+// Part 8 - Refactor everything into Components.
+/* Part08Controller Controller */
+function Part08Controller() {
+  var vm = this;
+  // console.log( vm );
+}

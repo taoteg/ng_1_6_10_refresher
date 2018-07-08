@@ -86,7 +86,7 @@ app.config(function( $stateProvider, $urlRouterProvider ) {
 // Define Main App Controller.
 app.controller('mainCtrl', function( ) {
   var vm = this;
-  console.log( vm );
+  // console.log( vm );
 });
 
 // Define Filters.

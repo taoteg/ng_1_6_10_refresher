@@ -40,8 +40,8 @@ app.component('navigation', {
               Data
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="dropdown-menu-title">Data</div>
-              <div class="dropdown-divider"></div>
+              <!--<div class="dropdown-menu-title">Data</div>-->
+              <!--<div class="dropdown-divider"></div>-->
               <a class="dropdown-item transition" ui-sref="posts">Posts</a>
               <a class="dropdown-item transition" ui-sref="albums">Albums</a>
               <a class="dropdown-item transition" ui-sref="comments">Comments</a>
@@ -52,8 +52,8 @@ app.component('navigation', {
               Parts
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="dropdown-menu-title">Parts</div>
-              <div class="dropdown-divider"></div>
+              <!--<div class="dropdown-menu-title">Parts</div>-->
+              <!--<div class="dropdown-divider"></div>-->
               <a class="dropdown-item transition" ui-sref="example">00. Example Component</a>
               <a class="dropdown-item transition" ui-sref="part01">01. Getting Started</a>
               <a class="dropdown-item transition" ui-sref="part02">02. Two-way Data Binding & Controllers</a>

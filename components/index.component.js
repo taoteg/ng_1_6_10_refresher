@@ -11,17 +11,23 @@ app.component('index', {
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
     <style>
+      .index-component {
+        /* STYLES */
+        margin: 1rem 2rem 2rem 1.5rem;
+      }
     </style>
     <!-- TEMPLATE -->
-    <example-component></example-component>
-    <part01></part01>
-    <part02></part02>
-    <part03></part03>
-    <part04></part04>
-    <part05></part05>
-    <part06a></part06a>
-    <part06b></part06b>
-    <part07></part07>
-    <part08></part08>
-    <part09></part09>`
+    <div class="index-component">
+      <example-component></example-component>
+      <part01></part01>
+      <part02></part02>
+      <part03></part03>
+      <part04></part04>
+      <part05></part05>
+      <part06a></part06a>
+      <part06b></part06b>
+      <part07></part07>
+      <part08></part08>
+      <part09></part09>
+    </div>`
 });

@@ -28,8 +28,12 @@ app.component('part09', {
         Part 9: Nested Routes with UI-Router
       </button>
       <div class="collapse part09-component-content" id="collapsePart09">
-        <p class="heading">Nested Routes with UI-Router</p>
-        <p>Stuff will go here eventually...</p>
+        <p class="heading">Nested Route: <i>List of Posts</i></p>
+        <p>Search by value:</p>
+        <input class="input-field" type="text" ng-model="vm.searchPosts" />
+        <ul ng-repeat="post in vm.posts | filter: vm.searchPosts">
+          <li>title: {{ post.title }}</li>
+        </ul>
       </div>
     </div>`
 });
@@ -40,7 +44,15 @@ app.component('part09', {
 
 // Part 9 - Nested routes in ui-router.
 /* Part09Controller Controller */
-function Part09Controller() {
+function Part09Controller( $http ) {
   var vm = this;
   // console.log( vm );
+  var targetUrl = 'https://jsonplaceholder.typicode.com/posts';
+  $http.get(targetUrl).then(function( response ) {
+    vm.completePosts = response.data;
+    vm.incompletePosts = vm.completePosts.splice(0, 50);
+    // vm.posts = vm.completePosts;
+    vm.posts = vm.incompletePosts;
+    console.log(vm.posts);
+  });
 }

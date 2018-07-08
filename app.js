@@ -1,7 +1,7 @@
 // Base Javascript file for app.
 
 // Define App.
-var app = angular.module('reviewNgApp', ['ui.router']);
+var app = angular.module('ngApp', ['ui.router']);
 
 // Configure App.
 app.config(function( $stateProvider, $urlRouterProvider ) {
@@ -11,35 +11,6 @@ app.config(function( $stateProvider, $urlRouterProvider ) {
     .state('home', {
       url: '/',
       template: '<index></index>'
-    })
-    // .state('data', {
-    //   url: '/data',
-    //   template: '<ui-view></ui-view>'
-    // })
-    // .state('data.posts', {
-    //   url: '/posts',
-    //   template: '<posts-list></posts-list>',
-    //   controllerAs: 'vm'
-    // })
-    // .state('data.albums', {
-    //   url: '/albums',
-    //   template: '<albums-list></albums-list>',
-    //   controllerAs: 'vm'
-    // })
-    .state('posts', {
-      url: '/posts',
-      template: '<posts-list></posts-list>',
-      controllerAs: 'vm'
-    })
-    .state('albums', {
-      url: '/albums',
-      template: '<albums-list></albums-list>',
-      controllerAs: 'vm'
-    })
-    .state('forEach((item) => {})data.comments', {
-      url: '/comments',
-      template: '<comments-list></comments-list>',
-      controllerAs: 'vm'
     })
     .state('example', {
       url: '/example',
@@ -80,11 +51,48 @@ app.config(function( $stateProvider, $urlRouterProvider ) {
     .state('part08', {
       url: '/part08',
       template: '<part08></part08>'
+    })
+    .state('part09', {
+      url: '/part09',
+      template: '<part09></part09>'
     });
+
+    // NESTED ROUTES- NOT WORKING.
+    // .state('data', {
+    //   url: '/data',
+    //   template: '<ui-view></ui-view>'
+    // })
+    // .state('data.posts', {
+    //   url: '/posts',
+    //   template: '<part09 posts="vm.posts"></part09>',
+    //   controllerAs: 'vm'
+    // })
+    // .state('data.albums', {
+    //   url: '/albums',
+    //   template: '<albums-list></albums-list>',
+    //   controllerAs: 'vm'
+    // })
+
+    // REMOVED ROUTES.
+    // .state('posts', {
+    //   url: '/posts',
+    //   template: '<posts-list></posts-list>',
+    //   controllerAs: 'vm'
+    // })
+    // .state('albums', {
+    //   url: '/albums',
+    //   template: '<albums-list></albums-list>',
+    //   controllerAs: 'vm'
+    // })
+    // .state('forEach((item) => {})data.comments', {
+    //   url: '/comments',
+    //   template: '<comments-list></comments-list>',
+    //   controllerAs: 'vm'
+    // })
 });
 
 // Define Main App Controller.
-app.controller('mainCtrl', function( ) {
+app.controller('appCtrl', function() {
   var vm = this;
   // console.log( vm );
 });

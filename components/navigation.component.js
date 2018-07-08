@@ -46,6 +46,9 @@ app.component('navigation', {
           <li class="nav-item active">
             <a class="nav-link" ui-sref="home"><span class="fa fa-door-open"></span></a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" ui-sref="data/posts">Posts</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"
                href="#"

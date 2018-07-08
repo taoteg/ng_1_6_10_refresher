@@ -6,8 +6,8 @@ app.component('part07', {
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
     <style>
-      .component {}
-      .component-content {
+      .part07-component { margin: 0.5rem 1rem; }
+      .part07-component-content {
         padding: 0.5rem 1rem 0.2rem;
         background: #EEE;
         border: 1px solid #000;
@@ -18,7 +18,7 @@ app.component('part07', {
       }
     </style>
     <!-- TEMPLATE -->
-    <div class="component">
+    <div class="part07-component">
       <button class="btn btn-block btn-dark"
               type="button"
               data-toggle="collapse"
@@ -27,7 +27,7 @@ app.component('part07', {
               aria-controls="collapsePart07">
         Part 7: Simple Components
       </button>
-      <div class="collapse component-content" id="collapsePart07">
+      <div class="collapse part07-component-content" id="collapsePart07">
         <p class="heading">Simple Components</p>
         <p>Both the Albums Service and the Comments Factory have both been refactored into simple components under the hood. Dig into teh code to see the changes.</p>
       </div>

@@ -6,8 +6,8 @@ app.component('part08', {
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
     <style>
-      .component {}
-      .component-content {
+      .part08-component { margin: 0.5rem 1rem; }
+      .part08-component-content {
         padding: 0.5rem 1rem 0.2rem;
         background: #EEE;
         border: 1px solid #000;
@@ -18,7 +18,7 @@ app.component('part08', {
       }
     </style>
     <!-- TEMPLATE -->
-    <div class="component">
+    <div class="part08-component">
       <button class="btn btn-block btn-dark"
               type="button"
               data-toggle="collapse"
@@ -27,7 +27,7 @@ app.component('part08', {
               aria-controls="collapsePart08">
         Part 8: UI-Router
       </button>
-      <div class="collapse component-content" id="collapsePart08">
+      <div class="collapse part08-component-content" id="collapsePart08">
         <p class="heading">Using UI-Router</p>
         <p>Major refactor to site structure is now completed.</p>
         <p>

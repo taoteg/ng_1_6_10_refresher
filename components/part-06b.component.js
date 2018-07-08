@@ -6,8 +6,8 @@ app.component('part06b', {
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
     <style>
-      .component {}
-      .component-content {
+      .part06b-component { margin: 0.5rem 1rem; }
+      .part06b-component-content {
         padding: 0.5rem 1rem 0.2rem;
         background: #EEE;
         border: 1px solid #000;
@@ -26,7 +26,7 @@ app.component('part06b', {
       }
     </style>
     <!-- TEMPLATE -->
-    <div class="component">
+    <div class="part06b-component">
       <button class="btn btn-block btn-dark"
               type="button"
               data-toggle="collapse"
@@ -35,7 +35,7 @@ app.component('part06b', {
               aria-controls="collapsePart06B">
         Part 6B: Factories
       </button>
-      <div class="collapse component-content" id="collapsePart06B">
+      <div class="collapse part06b-component-content" id="collapsePart06B">
         <p class="heading">Factories: <i>List of Comments</i></p>
         <p>Search by value:</p>
         <input class="input-field" type="text" ng-model="vm.searchComments" />

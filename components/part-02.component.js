@@ -6,8 +6,8 @@ app.component('part02', {
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
     <style>
-      .component {}
-      .component-content {
+      .part02-component { margin: 0.5rem 1rem; }
+      .part02-component-content {
         padding: 0.5rem 1rem 0.2rem;
         background: #EEE;
         border: 1px solid #000;
@@ -26,7 +26,7 @@ app.component('part02', {
       }
     </style>
     <!-- TEMPLATE -->
-    <div class="component">
+    <div class="part02-component">
       <button class="btn btn-block btn-dark"
               type="button"
               data-toggle="collapse"
@@ -35,7 +35,7 @@ app.component('part02', {
               aria-controls="collapsePart02">
         Part 2: Two-way Data Binding & Controllers
       </button>
-      <div class="collapse component-content" id="collapsePart02">
+      <div class="collapse part02-component-content" id="collapsePart02">
         <p class="heading">Two-way Data Binding & Controllers</p>
         <p>{{ vm.world }}</p>
         <p>{{ vm.inputtext }}</p>

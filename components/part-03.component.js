@@ -6,19 +6,19 @@ app.component('part03', {
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
     <style>
-    .component {}
-    .component-content {
-      padding: 0.5rem 1rem 0.2rem;
-      background: #EEE;
-      border: 1px solid #000;
-    }
-    .heading {
-      margin: 1rem 0;
-      font-weight: 900;
-    }
+      .part03-component { margin: 0.5rem 1rem; }
+      .part03-component-content {
+        padding: 0.5rem 1rem 0.2rem;
+        background: #EEE;
+        border: 1px solid #000;
+      }
+      .heading {
+        margin: 1rem 0;
+        font-weight: 900;
+      }
     </style>
     <!-- TEMPLATE -->
-    <div class="component">
+    <div class="part03-component">
       <button class="btn btn-block btn-dark"
               type="button"
               data-toggle="collapse"
@@ -27,7 +27,7 @@ app.component('part03', {
               aria-controls="collapsePart03">
         Part 3: Common Directives
       </button>
-      <div class="collapse component-content" id="collapsePart03">
+      <div class="collapse part03-component-content" id="collapsePart03">
         <p class="heading">Common Directives</p>
         <p>
           <i>List of Fruits</i>

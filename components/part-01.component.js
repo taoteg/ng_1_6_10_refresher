@@ -6,8 +6,8 @@ app.component('part01', {
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
     <style>
-      .component {}
-      .component-content {
+      .part01-component { margin: 0.5rem 1rem; }
+      .part01-component-content {
         padding: 0.5rem 1rem 0.2rem;
         background: #EEE;
         border: 1px solid #000;
@@ -18,7 +18,7 @@ app.component('part01', {
       }
     </style>
     <!-- TEMPLATE -->
-    <div class="component">
+    <div class="part01-component">
       <button class="btn btn-block btn-dark"
               type="button"
               data-toggle="collapse"
@@ -27,7 +27,7 @@ app.component('part01', {
               aria-controls="collapsePart01">
         Part 1: Getting Started
       </button>
-      <div class="collapse component-content" id="collapsePart01">
+      <div class="collapse part01-component-content" id="collapsePart01">
         <p class="heading">Getting Started</p>
         <p>The Sky is {{2>1}} blue</p>
       </div>

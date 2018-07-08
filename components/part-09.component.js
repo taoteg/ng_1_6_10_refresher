@@ -6,8 +6,8 @@ app.component('part09', {
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
     <style>
-      .component {}
-      .component-content {
+      .part09-component { margin: 0.5rem 1rem; }
+      .part09-component-content {
         padding: 0.5rem 1rem 0.2rem;
         background: #EEE;
         border: 1px solid #000;
@@ -18,7 +18,7 @@ app.component('part09', {
       }
     </style>
     <!-- TEMPLATE -->
-    <div class="component">
+    <div class="part09-component">
       <button class="btn btn-block btn-dark"
               type="button"
               data-toggle="collapse"
@@ -27,7 +27,7 @@ app.component('part09', {
               aria-controls="collapsePart09">
         Part 9: Nested Routes with UI-Router
       </button>
-      <div class="collapse component-content" id="collapsePart09">
+      <div class="collapse part09-component-content" id="collapsePart09">
         <p class="heading">Nested Routes with UI-Router</p>
         <p>Stuff will go here eventually...</p>
       </div>

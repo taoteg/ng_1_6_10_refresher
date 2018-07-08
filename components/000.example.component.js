@@ -6,8 +6,8 @@ app.component('exampleComponent', {
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
     <style>
-      .component {}
-      .component-content {
+      .part00-component { margin: 0.5rem 1rem; }
+      .part00-component-content {
         padding: 0.5rem 1rem 0.2rem;
         background: #EEE;
         border: 1px solid #000;
@@ -18,11 +18,11 @@ app.component('exampleComponent', {
       }
     </style>
     <!-- TEMPLATE -->
-    <div class="component">
+    <div class="part00-component">
       <button class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Example Component
       </button>
-      <div class="collapse component-content" id="collapseExample">
+      <div class="collapse part00-component-content" id="collapseExample">
         <p class="heading">Example Component</p>
         <p>This is an example component.</p>
       </div>

@@ -1,9 +1,4 @@
-function IndexController() {
-  // `this` reference required to get correct `this` in $http.get method.
-  var vm = this;
-  console.log( vm );
-}
-
+/* Component Definition */
 app.component('index', {
   controller: IndexController,
   controllerAs: 'vm',
@@ -13,7 +8,6 @@ app.component('index', {
     <style>
       .index-component {
         /* STYLES */
-        margin: 1rem 2rem 2rem 1.5rem;
       }
     </style>
     <!-- TEMPLATE -->
@@ -31,3 +25,13 @@ app.component('index', {
       <part09></part09>
     </div>`
 });
+
+/* We can rely on function hoisting here to make this entire method available to the component.
+ * Remember: function hoisting works well, variable hoisting works poorly.
+ */
+
+/* IndexController Controller */
+function IndexController() {
+  var vm = this;
+  // console.log( vm );
+}

@@ -45,13 +45,11 @@ body {
   line-height: 1.5;
   background: #FFF; /* #999; #104; #DDF; */
   color: #111;
+  cursor: default;
 }
 /* ANIMATION & TRANSITIONS */
 .transition {
   transition: all 200ms ease;
-}
-.transition:hover {
-  padding-left: 2rem;
 }
 /* SELECTOR-CLASSES */
 /**

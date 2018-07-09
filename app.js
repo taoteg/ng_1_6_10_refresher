@@ -61,52 +61,34 @@ app.config(function( $stateProvider, $urlRouterProvider ) {
       template: '<ui-view></ui-view>'
     })
     .state('nest.nested', {
+      // controllerAs: 'vm',
       url: '/nested',
-      template: '<nested larva="vm.nestedLarva"></nested>',
-      controllerAs: 'vm'
+      template: '<nested></nested>',
+      // template: '<nested larva="vm.nestedLarva"></nested>',
+      // resolve: {
+      //   nestedLarva: function( $http ){
+      //     $http.get('https://jsonplaceholder.typicode.com/albums')
+      //          .then(response, function() {
+      //            return response.data.splice(0,50);
+      //          });
+      //   }
+      // }
     })
     .state('nest.nesting', {
+      // controllerAs: 'vm',
       url: '/nesting',
-      template: '<nesting larva="vm.nestingLarva"></nesting>',
-      controllerAs: 'vm'
+      template: '<nesting></nesting>',
+      // template: '<nesting larva="vm.nestingLarva"></nesting>',
+      // resolve: {
+      //   nestingLarva: function( albumSvc ) {
+      //     return albumSvc.getAlbums('https://jsonplaceholder.typicode.com/albums');
+      //   }
+      // }
     });
-
-    // NESTED ROUTES- NOT WORKING.
-    // .state('data', {
-    //   url: '/data',
-    //   template: '<ui-view></ui-view>'
-    // })
-    // .state('data.posts', {
-    //   url: '/posts',
-    //   template: '<part09 posts="vm.posts"></part09>',
-    //   controllerAs: 'vm'
-    // })
-    // .state('data.albums', {
-    //   url: '/albums',
-    //   template: '<albums-list></albums-list>',
-    //   controllerAs: 'vm'
-    // })
-
-    // REMOVED ROUTES.
-    // .state('posts', {
-    //   url: '/posts',
-    //   template: '<posts-list></posts-list>',
-    //   controllerAs: 'vm'
-    // })
-    // .state('albums', {
-    //   url: '/albums',
-    //   template: '<albums-list></albums-list>',
-    //   controllerAs: 'vm'
-    // })
-    // .state('forEach((item) => {})data.comments', {
-    //   url: '/comments',
-    //   template: '<comments-list></comments-list>',
-    //   controllerAs: 'vm'
-    // })
 });
 
 // Define Main App Controller.
-app.controller('appCtrl', function() {
+app.controller('appCtrl', function( $http ) {
   var vm = this;
   // console.log( vm );
 });

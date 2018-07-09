@@ -2,6 +2,12 @@
 app.component('nested', {
   controller: NestedComponentController,
   controllerAs: 'vm',
+  // bindings: {
+  //   // < denotes one-way bindings
+  //   // = denotes two-way bidning
+  //   // & denotes a function
+  //   nestedLarva: '<'
+  // },
   template: `
     <!-- SINGLE PAGE COMPONENT -->
     <!-- COMPONENT STYLES -->
@@ -25,6 +31,10 @@ app.component('nested', {
       <div class="collapse nested-component-content" id="collapseExample">
         <p class="heading">Nested Route</p>
         <p>This is an example of a nested route with a component.</p>
+        <p class="heading">Nested Larva</p>
+        <ul ng-repeat="larva in vm.nestedLarva">
+          <li>{{ larva }}</li>
+        </ul>
       </div>
     </div>`
 });
@@ -35,6 +45,9 @@ app.component('nested', {
 
 /* Example Controller */
 function NestedComponentController() {
+  // console.log($stateParams);
   var vm = this;
   // console.log( vm );
+
+  vm.nestedLarva = ['bug','worm','fly'];
 }

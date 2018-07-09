@@ -55,6 +55,20 @@ app.config(function( $stateProvider, $urlRouterProvider ) {
     .state('part09', {
       url: '/part09',
       template: '<part09></part09>'
+    })
+    .state('nest', {
+      url: '/nest',
+      template: '<ui-view></ui-view>'
+    })
+    .state('nest.nested', {
+      url: '/nested',
+      template: '<nested></nested>',
+      controllerAs: 'vm'
+    })
+    .state('nest.nesting', {
+      url: '/nesting',
+      template: '<nesting></nesting>',
+      controllerAs: 'vm'
     });
 
     // NESTED ROUTES- NOT WORKING.

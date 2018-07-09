@@ -65,17 +65,32 @@ app.component('navigation', {
               Parts
             </a>
             <div class="dropdown-menu" aria-labelledby="partsDropdown">
-              <a class="dropdown-item transition" ui-sref="example"><span class="fa fa-futbol transition"></span>Part 00. Example Component</a>
-              <a class="dropdown-item transition" ui-sref="part01"><span class="fa fa-futbol transition"></span>Part 01. Getting Started</a>
-              <a class="dropdown-item transition" ui-sref="part02"><span class="fa fa-futbol transition"></span>Part 02. Two-way Data Binding & Controllers</a>
-              <a class="dropdown-item transition" ui-sref="part03"><span class="fa fa-futbol transition"></span>Part 03. Common Directives</a>
-              <a class="dropdown-item transition" ui-sref="part04"><span class="fa fa-futbol transition"></span>Part 04. Filters</a>
-              <a class="dropdown-item transition" ui-sref="part05"><span class="fa fa-futbol transition"></span>Part 05. $http Services</a>
-              <a class="dropdown-item transition" ui-sref="part06a"><span class="fa fa-futbol transition"></span>Part 06A. Services</a>
-              <a class="dropdown-item transition" ui-sref="part06b"><span class="fa fa-futbol transition"></span>Part 06B. Factories</a>
-              <a class="dropdown-item transition" ui-sref="part07"><span class="fa fa-futbol transition"></span>Part 07. Simple Components</a>
-              <a class="dropdown-item transition" ui-sref="part08"><span class="fa fa-futbol transition"></span>Part 08. UI-Router</a>
-              <a class="dropdown-item transition" ui-sref="part09"><span class="fa fa-futbol transition"></span>Part 09. Nested Routes</a>
+              <a class="dropdown-item transition" ui-sref="example"><span class="fa fa-puzzle-piece transition"></span>Part 00. Example Component</a>
+              <a class="dropdown-item transition" ui-sref="part01"><span class="fa fa-puzzle-piece transition"></span>Part 01. Getting Started</a>
+              <a class="dropdown-item transition" ui-sref="part02"><span class="fa fa-puzzle-piece transition"></span>Part 02. Two-way Data Binding & Controllers</a>
+              <a class="dropdown-item transition" ui-sref="part03"><span class="fa fa-puzzle-piece transition"></span>Part 03. Common Directives</a>
+              <a class="dropdown-item transition" ui-sref="part04"><span class="fa fa-puzzle-piece transition"></span>Part 04. Filters</a>
+              <a class="dropdown-item transition" ui-sref="part05"><span class="fa fa-puzzle-piece transition"></span>Part 05. $http Services</a>
+              <a class="dropdown-item transition" ui-sref="part06a"><span class="fa fa-puzzle-piece transition"></span>Part 06A. Services</a>
+              <a class="dropdown-item transition" ui-sref="part06b"><span class="fa fa-puzzle-piece transition"></span>Part 06B. Factories</a>
+              <a class="dropdown-item transition" ui-sref="part07"><span class="fa fa-puzzle-piece transition"></span>Part 07. Simple Components</a>
+              <a class="dropdown-item transition" ui-sref="part08"><span class="fa fa-puzzle-piece transition"></span>Part 08. UI-Router</a>
+              <a class="dropdown-item transition" ui-sref="part09"><span class="fa fa-puzzle-piece transition"></span>Part 09. Nested Routes</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle transition"
+               href="#"
+               id="nestDropdown"
+               role="button"
+               data-toggle="dropdown"
+               aria-haspopup="true"
+               aria-expanded="false">
+              Nest
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nestDropdown">
+              <a class="dropdown-item transition" ui-sref="nest.nested"><span class="fa fa-kiwi-bird transition"></span>Nested Route</a>
+              <a class="dropdown-item transition" ui-sref="nest.nesting"><span class="fa fa-kiwi-bird transition"></span>Nesting Route</a>
             </div>
           </li>
         </ul>

@@ -53,6 +53,6 @@ function Part09Controller( $http ) {
     vm.incompletePosts = vm.completePosts.splice(0, 50);
     // vm.posts = vm.completePosts;
     vm.posts = vm.incompletePosts;
-    console.log(vm.posts);
+    // console.log(vm.posts);
   });
 }

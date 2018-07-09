@@ -62,12 +62,12 @@ app.config(function( $stateProvider, $urlRouterProvider ) {
     })
     .state('nest.nested', {
       url: '/nested',
-      template: '<nested></nested>',
+      template: '<nested larva="vm.nestedLarva"></nested>',
       controllerAs: 'vm'
     })
     .state('nest.nesting', {
       url: '/nesting',
-      template: '<nesting></nesting>',
+      template: '<nesting larva="vm.nestingLarva"></nesting>',
       controllerAs: 'vm'
     });
 

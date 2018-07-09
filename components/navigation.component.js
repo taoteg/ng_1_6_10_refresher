@@ -9,31 +9,36 @@ app.component('navigation', {
       nav {
         font-size: 1.2rem;
       }
+      .navbar {
+        background: #EDCBDF !important;
+      }
       .bottom-border {
         border-bottom: 1px solid #111;
       }
-      .dropdown-item {
-        font-weight: 900;
-        color: #111;
+      .navbar-brand {
+        font-size: 2rem;
+        font-weight: 800;
       }
       .navbar-brand:hover {
-        color: #30A !important;
+        color: #765468 !important;
+      }
+      .dropdown-item {
+        font-weight: 300;
+        color: #111;
       }
       .dropdown-item:hover {
-        /* background: #EEF; */
-        color: #30A;
         padding-left: 2rem;
       }
       .dropdown-item > span {
-        margin-right: 0.5rem;
+        margin-right: 0.8rem;
       }
-      .dropdown-menu-title {
-        margin: 0.5rem 1rem;
-        color: #777;
+      .dropdown-item:hover > span {
+        font-size: 1.2rem;
+        color: #875479;
       }
     </style>
     <!-- TEMPLATE -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light bottom-border">
+    <nav class="navbar navbar-expand-md navbar-light bg-light font-kanit bottom-border">
       <a class="navbar-brand transition" ui-sref="home">AngularJS 1.6 Refresher</a>
       <button class="navbar-toggler"
               type="button"
@@ -60,17 +65,17 @@ app.component('navigation', {
               Parts
             </a>
             <div class="dropdown-menu" aria-labelledby="partsDropdown">
-              <a class="dropdown-item transition" ui-sref="example"><span class="fa fa-futbol"></span>Part 00. Example Component</a>
-              <a class="dropdown-item transition" ui-sref="part01"><span class="fa fa-futbol"></span>Part 01. Getting Started</a>
-              <a class="dropdown-item transition" ui-sref="part02"><span class="fa fa-futbol"></span>Part 02. Two-way Data Binding & Controllers</a>
-              <a class="dropdown-item transition" ui-sref="part03"><span class="fa fa-futbol"></span>Part 03. Common Directives</a>
-              <a class="dropdown-item transition" ui-sref="part04"><span class="fa fa-futbol"></span>Part 04. Filters</a>
-              <a class="dropdown-item transition" ui-sref="part05"><span class="fa fa-futbol"></span>Part 05. $http Services</a>
-              <a class="dropdown-item transition" ui-sref="part06a"><span class="fa fa-futbol"></span>Part 06A. Services</a>
-              <a class="dropdown-item transition" ui-sref="part06b"><span class="fa fa-futbol"></span>Part 06B. Factories</a>
-              <a class="dropdown-item transition" ui-sref="part07"><span class="fa fa-futbol"></span>Part 07. Simple Components</a>
-              <a class="dropdown-item transition" ui-sref="part08"><span class="fa fa-futbol"></span>Part 08. UI-Router</a>
-              <a class="dropdown-item transition" ui-sref="part09"><span class="fa fa-futbol"></span>Part 09. Nested Routes</a>
+              <a class="dropdown-item transition" ui-sref="example"><span class="fa fa-futbol transition"></span>Part 00. Example Component</a>
+              <a class="dropdown-item transition" ui-sref="part01"><span class="fa fa-futbol transition"></span>Part 01. Getting Started</a>
+              <a class="dropdown-item transition" ui-sref="part02"><span class="fa fa-futbol transition"></span>Part 02. Two-way Data Binding & Controllers</a>
+              <a class="dropdown-item transition" ui-sref="part03"><span class="fa fa-futbol transition"></span>Part 03. Common Directives</a>
+              <a class="dropdown-item transition" ui-sref="part04"><span class="fa fa-futbol transition"></span>Part 04. Filters</a>
+              <a class="dropdown-item transition" ui-sref="part05"><span class="fa fa-futbol transition"></span>Part 05. $http Services</a>
+              <a class="dropdown-item transition" ui-sref="part06a"><span class="fa fa-futbol transition"></span>Part 06A. Services</a>
+              <a class="dropdown-item transition" ui-sref="part06b"><span class="fa fa-futbol transition"></span>Part 06B. Factories</a>
+              <a class="dropdown-item transition" ui-sref="part07"><span class="fa fa-futbol transition"></span>Part 07. Simple Components</a>
+              <a class="dropdown-item transition" ui-sref="part08"><span class="fa fa-futbol transition"></span>Part 08. UI-Router</a>
+              <a class="dropdown-item transition" ui-sref="part09"><span class="fa fa-futbol transition"></span>Part 09. Nested Routes</a>
             </div>
           </li>
         </ul>

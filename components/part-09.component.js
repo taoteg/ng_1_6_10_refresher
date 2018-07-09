@@ -16,6 +16,12 @@ app.component('part09', {
         margin: 1rem 0;
         font-weight: 900;
       }
+      a,
+      a:hover {
+        text-decoration: none;
+      }
+      a { color: #A26; }
+      a:hover { color: #62A; }
     </style>
     <!-- TEMPLATE -->
     <div class="part09-component">
@@ -28,12 +34,13 @@ app.component('part09', {
         Nested Routes with UI-Router
       </button>
       <div class="collapse part09-component-content" id="collapsePart09">
-        <p class="heading">Part 9: Nested Route - <i>List of Posts</i></p>
-        <p>Search by value:</p>
-        <input class="input-field" type="text" ng-model="vm.searchPosts" />
-        <ul ng-repeat="post in vm.posts | filter: vm.searchPosts">
-          <li>title: {{ post.title }}</li>
-        </ul>
+        <p class="heading">Part 9: Nested Routes - <i>New Components</i></p>
+        <p>The nest dropdown menu links to two new nested route components:
+          <ul>
+            <li><a class="transition" ui-sref="nest.nested">nested</a></li>
+            <li><a class="transition" ui-sref="nest.nesting">nesting</a></li>
+          </ul>
+        </p>
       </div>
     </div>`
 });

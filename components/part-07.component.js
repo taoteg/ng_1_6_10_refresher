@@ -25,10 +25,10 @@ app.component('part07', {
               data-target="#collapsePart07"
               aria-expanded="false"
               aria-controls="collapsePart07">
-        Part 7: Simple Components
+        Simple Components
       </button>
       <div class="collapse part07-component-content" id="collapsePart07">
-        <p class="heading">Simple Components</p>
+        <p class="heading">Part 7: Simple Components</p>
         <p>Both the Albums Service and the Comments Factory have both been refactored into simple components under the hood. Dig into teh code to see the changes.</p>
       </div>
     </div>`

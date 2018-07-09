@@ -33,10 +33,10 @@ app.component('part05', {
               data-target="#collapsePart05"
               aria-expanded="false"
               aria-controls="collapsePart05">
-        Part 5: $http Service
+        $http Service
       </button>
       <div class="collapse part05-component-content" id="collapsePart05">
-        <p class="heading">$http Service: <i>List of Posts</i></p>
+        <p class="heading">Part 5: $http Service - <i>List of Posts</i></p>
         <p>Search by value:</p>
         <input class="input-field" type="text" ng-model="vm.searchPosts" />
         <ul ng-repeat="post in vm.posts | filter: vm.searchPosts">

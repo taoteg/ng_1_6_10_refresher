@@ -25,10 +25,10 @@ app.component('part03', {
               data-target="#collapsePart03"
               aria-expanded="false"
               aria-controls="collapsePart03">
-        Part 3: Common Directives
+        Common Directives
       </button>
       <div class="collapse part03-component-content" id="collapsePart03">
-        <p class="heading">Common Directives</p>
+        <p class="heading">Part 3: Common Directives</p>
         <p>
           <i>List of Fruits</i>
           <ul ng-repeat="fruit in vm.fruits">

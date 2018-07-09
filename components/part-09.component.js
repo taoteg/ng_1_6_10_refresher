@@ -25,10 +25,10 @@ app.component('part09', {
               data-target="#collapsePart09"
               aria-expanded="false"
               aria-controls="collapsePart09">
-        Part 9: Nested Routes with UI-Router
+        Nested Routes with UI-Router
       </button>
       <div class="collapse part09-component-content" id="collapsePart09">
-        <p class="heading">Nested Route: <i>List of Posts</i></p>
+        <p class="heading">Part 9: Nested Route - <i>List of Posts</i></p>
         <p>Search by value:</p>
         <input class="input-field" type="text" ng-model="vm.searchPosts" />
         <ul ng-repeat="post in vm.posts | filter: vm.searchPosts">

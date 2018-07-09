@@ -33,10 +33,10 @@ app.component('part04', {
               data-target="#collapsePart04"
               aria-expanded="false"
               aria-controls="collapsePart04">
-        Part 4: Filters
+        Filters
       </button>
       <div class="collapse part04-component-content" id="collapsePart04">
-        <p class="heading">Filters: <i>List of Cars</i></p>
+        <p class="heading">Part 4: Filters - <i>List of Cars</i></p>
         <p>Search by value:</p>
         <input class="input-field" type="text" ng-model="vm.searchCar" />
         <ul ng-repeat="car in vm.cars | filter: vm.searchCar">

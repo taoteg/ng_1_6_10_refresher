@@ -25,10 +25,10 @@ app.component('part08', {
               data-target="#collapsePart08"
               aria-expanded="false"
               aria-controls="collapsePart08">
-        Part 8: UI-Router
+        UI-Router
       </button>
       <div class="collapse part08-component-content" id="collapsePart08">
-        <p class="heading">Using UI-Router</p>
+        <p class="heading">Part 8: Using UI-Router</p>
         <p>Major refactor to site structure is now completed.</p>
         <p>
           <ul>

@@ -25,10 +25,10 @@ app.component('part01', {
               data-target="#collapsePart01"
               aria-expanded="false"
               aria-controls="collapsePart01">
-        Part 1: Getting Started
+        Getting Started
       </button>
       <div class="collapse part01-component-content" id="collapsePart01">
-        <p class="heading">Getting Started</p>
+        <p class="heading">Part 01: Getting Started</p>
         <p>The Sky is {{2>1}} blue</p>
       </div>
     </div>`

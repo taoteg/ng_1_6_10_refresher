@@ -33,10 +33,10 @@ app.component('part02', {
               data-target="#collapsePart02"
               aria-expanded="false"
               aria-controls="collapsePart02">
-        Part 2: Two-way Data Binding & Controllers
+        Two-way Data Binding & Controllers
       </button>
       <div class="collapse part02-component-content" id="collapsePart02">
-        <p class="heading">Two-way Data Binding & Controllers</p>
+        <p class="heading">Part 2: Two-way Data Binding & Controllers</p>
         <p>{{ vm.world }}</p>
         <p>{{ vm.inputtext }}</p>
         <input class="input-field" type="text" ng-model="vm.inputtext" />
